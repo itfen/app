@@ -75,3 +75,40 @@ a {
     color: #037a3e;
     text-decoration: none
 }
+
+.icon-gb, .icon-de, .icon-pl {
+    display: inline-block;
+    margin: 2px 8px 2px 2px;
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.icon-gb {
+    background: url('../img/gb.png') center center no-repeat;
+}
+
+.icon-de {
+    background: url('../img/de.png') center center no-repeat;
+}
+
+.icon-pl {
+    background: url('../img/pl.png') center center no-repeat;
+}
+
+.logo {
+    float: left;
+}
+
+.languages {
+    float: right;
+    margin-top: 40px;
+}
+
+section {
+    clear: both;
+}
+
+img {
+    border: none;
+}

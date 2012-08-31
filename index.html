@@ -4,9 +4,17 @@
     <title>Home | Apptamers</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="stylesheet" href="apptamers.css">
+    <link rel="stylesheet" href="./css/apptamers.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/apptamers.js"></script>
     <script>
         var domain = '@' + 'app' + 'tamers' + '.' + 'com';
+        var lang = (navigator.language) ? navigator.language : navigator.userLanguage;
+        if(lang) {
+            lang = lang.substring(0, 2);
+        }
     </script>
 </head>
 <body>
@@ -14,7 +22,17 @@
     <article id="pl">
         <header class="top">
             <div class="logo">
-                <img src="./apptamers.png" title='apptamers' alt='apptamers'>
+                <a href="/"><img src="./apptamers.png" title='apptamers' alt='apptamers'></a>
+            </div>
+            <div class="languages btn-group">
+                <button data-toggle="dropdown" class="btn dropdown-toggle">
+                    <span class="icon-pl"></span>
+                    Polski
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="lang-gb" href="#"><span class="icon-gb"></span> English</a></li>
+                </ul>
             </div>
         </header>
         <section>
@@ -22,9 +40,10 @@
                 <div class="welcome">
                     <h1>Tworzymy rozwiązania, które usprawnią<br/> Twoją firmę</h1>
                     <p>
-                        Tworzymy dedytowane usługi i aplikacje internetowe dla firm i indywidualnych klientów. Jeśli
-                        masz pomysł i potrzebuje pomocy programistów, daj nam znać. Specjalizujemy się w niestandardowych rozwiązaniach
-                        algorytmicznych, optymalizacji i wysokiej jakości kodzie. Pomożemy usprawnić Twój biznes.
+                        Tworzymy dedytowane usługi i aplikacje internetowe Ruby on Rails dla firm i indywidualnych klientów. Jeśli
+                        masz pomysł lub potrzebuje pomocy programistów, daj nam znać. Specjalizujemy się w niestandardowych rozwiązaniach
+                        algorytmicznych, optymalizacji i wysokiej jakości kodzie.
+                        Pomożemy usprawnić Twój biznes.
                     </p>
                 </div>
             </div>
@@ -36,10 +55,20 @@
             &copy; 2012 Apptamers.com
         </footer>
     </article>
-    <article id="en">
+    <article id="gb">
         <header class="top">
             <div class="logo">
-                <img src="./apptamers.png" title='apptamers' alt='apptamers'>
+                <a href="/"><img src="./apptamers.png" title='apptamers' alt='apptamers'></a>
+            </div>
+            <div class="languages btn-group">
+                <button data-toggle="dropdown" class="btn dropdown-toggle">
+                    <span class="icon-gb"></span>
+                    English
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="lang-pl" href="#"><span class="icon-pl"></span> Polski</a></li>
+                </ul>
             </div>
         </header>
         <section>
@@ -64,5 +93,12 @@
     <div id="de">
 
     </div>
+    <script>
+        if(lang == 'en') {
+            $('.lang-gb').click();
+        } else if (lang == 'pl') {
+            $('.lang-pl').click();
+        }
+    </script>
 </body>
 </html>
