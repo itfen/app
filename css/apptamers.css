@@ -40,7 +40,7 @@ body {
     text-align: center;
 }
 
-.top, .welcome, .contact, .footer {
+.top, .welcome, .content, .contact, .footer {
     width: 850px;
     margin: 0 auto;
 }
