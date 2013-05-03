@@ -9,6 +9,14 @@ body {
     font-family: Verdana;
 }
 
+h1 {
+    margin-top: 30px;
+    font-family: "Alegreya",Palatino,Georgia,serif;
+    font-size: 3.5em;
+    font-weight: normal;
+    text-align: center;
+}
+
 .main {
     width: 800px;
     margin: 0 auto 0 auto;
@@ -43,6 +51,11 @@ body {
 .top, .welcome, .content, .contact, .footer {
     width: 850px;
     margin: 0 auto;
+}
+
+.offers .offer {
+    margin-top: 15px;
+    font-size: 15px;
 }
 
 .products, testimonials {
@@ -81,10 +94,11 @@ body {
 }
 
 .contact {
-    margin-top: 20px;
+    margin: 20px;
     text-align: center;
     font-family: Verdana;
     font-size: 2.2em;
+
 }
 
 #strip {
@@ -95,6 +109,11 @@ body {
 
 #pl, #de {
     display: none;
+}
+
+.social {
+    margin-top: 10px;
+    text-align: center;
 }
 
 .footer {
