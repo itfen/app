@@ -28,6 +28,14 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+    <script type="text/javascript">
+        $('a[href^="#"]').live('click',function(event){
+            event.preventDefault();
+            var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+            var customoffset = 150
+            $('html, body').animate({scrollTop:target_offset - customoffset}, 500);
+        });
+    </script>
 </head>
 <body>
     <div class="nav">

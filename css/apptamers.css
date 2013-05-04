@@ -50,6 +50,7 @@ h1 {
 
 .nav {
     position: fixed;
+    top: 0;
     width: 100%;
     height: 150px;
     background-color: #fff;
@@ -57,7 +58,8 @@ h1 {
 }
 
 .section {
-    padding-top: 150px;
+    margin-top: 150px;
+    clear: both;
 }
 
 .top, .welcome, .content, .contact, .footer {
@@ -70,7 +72,7 @@ h1 {
     font-size: 15px;
 }
 
-.products, testimonials {
+.products, .testimonials {
     margin-top: 20px;
 }
 
@@ -169,6 +171,11 @@ a {
     float: left;
     margin-top: 45px;
     margin-left: 30px;
+}
+
+.links a {
+    font-family: "Alegreya",Palatino,Georgia,serif;
+    font-size: 19px;
 }
 
 .languages {
