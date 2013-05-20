@@ -199,11 +199,10 @@ img {
     border: none;
 }
 
-#info {
+#owner {
     padding: 17px;
     float: right;
     margin-right: 100px;
-    width: 250px;
     border: 1px solid #eaeaea;
 }
 
