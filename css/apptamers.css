@@ -80,7 +80,7 @@ h1 {
     width: 900px;
     padding: 10px 0;
     clear: both;
-    margin: 60px auto;
+    margin: 0 auto;
 }
 
 .product h2 {
@@ -103,23 +103,40 @@ h1 {
 }
 
 .testimonials .testimonial .photo {
-    float: left;
-    margin-left: 80px;
+    float: right;
+    margin-left: 20px;
     width: 70px;
 }
 
 .testimonials .testimonial .photo img {
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 30px;
+}
+
+.testimonials .testimonial .bottom {
+    margin-top: 30px;
 }
 
 .testimonials .testimonial .recommendation {
-    font-family: Georgia;
-    font-size: 16px;
+    font-family: "Alegreya",Palatino,Georgia,serif;
+    font-size: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 2px;
+    padding: 30px;
+    height: 200px;
+
+}
+
+.quote-left, .quote-right {
+    color: #D5D5D5;
+    font-size: 85px;
+    line-height: 20px;
+    position: relative;
+    top: 30px;
 }
 
 .testimonials .testimonial .stars {
     margin: 0 auto;
-    padding-left: 50px;
+    padding: 50px 0 50px 0;
     text-align: center;
 }
 
@@ -127,6 +144,7 @@ h1 {
     text-align: right;
     font-style: normal;
     padding: 10px;
+    float: right;
 }
 
 .welcome p {
