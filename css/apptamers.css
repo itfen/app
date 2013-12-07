@@ -165,9 +165,10 @@ h1 {
     display: none;
 }
 
-.social {
-    margin-top: 10px;
+.social, .logos {
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .footer {
