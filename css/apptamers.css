@@ -55,6 +55,7 @@ h1 {
     height: 150px;
     background-color: #fff;
     margin: 0 auto;
+    z-index: 9999;
 }
 
 .section {
