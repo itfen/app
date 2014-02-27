@@ -17,6 +17,12 @@ h1 {
     text-align: center;
 }
 
+#map {
+    width: 400px;
+    height: 500px;
+    margin-top: 30px;
+}
+
 .main {
     width: 800px;
     margin: 0 auto 0 auto;
@@ -64,8 +70,12 @@ h1 {
 }
 
 .top, .welcome, .content, .footer {
-    width: 900px;
+    width: 950px;
     margin: 0 auto;
+}
+
+.top {
+    width: 1020px;
 }
 
 .offers .offer {
@@ -73,19 +83,116 @@ h1 {
     font-size: 15px;
 }
 
-.products, .testimonials {
+.products, .testimonials, .steps {
     margin-top: 20px;
 }
 
-.testimonials .testimonial {
+.testimonials .testimonial, .info {
     width: 900px;
     padding: 10px 0;
     clear: both;
     margin: 0 auto;
 }
 
+.offices {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.offices .office {
+    margin-top: 20px;
+}
+
+.steps .step, .bios .bio {
+    width: 900px;
+    padding: 10px 0;
+    clear: both;
+    margin: 70px auto;
+}
+
+.steps .step .icon {
+    width: 300px;
+    float: left;
+    opacity: .8;
+}
+
+.bios .bio .photo {
+    margin-top: 40px;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.bios .bio .photo img {
+    display: block; /* a picture is being displayed as a block, by a width it will be equal to the parent(in the div) */
+    border: 0; /* zero border */
+    margin: 0; /* external margin is lacking */
+    border-radius: 50%; /* read above */
+}
+
+.steps .step .content {
+    width: 500px;
+    float: left;
+}
+
+.steps .step .content h2, .bios .bio .content h2, .offices .office h2 {
+    font-family: "Alegreya",Palatino,Georgia,serif;
+    font-size: 32px;
+    font-weight: normal;
+    padding-bottom: 8px;
+}
+
+.offices .office h2 {
+    font-size: 20px;
+}
+
+.person {
+    margin-top: 20px;
+}
+
+.person img {
+    float: left;
+}
+
+.person .contacts {
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.contact h1 {
+    font-family: "Alegreya",Palatino,Georgia,serif;
+    font-size: 28px;
+    font-weight: normal;
+    padding-bottom: 8px;
+}
+
+.contact img {
+    border: 0 none;
+    border-radius: 50%;
+    display: block;
+    margin: 0;
+}
+
+.contact ul {
+    list-style-type: none;
+}
+
 .product h2 {
     font-family: "Alegreya",Palatino,Georgia,serif;
+}
+
+.info h1 {
+    font-family: "Alegreya",Palatino,Georgia,serif;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.info h2 {
+    font-family: "Alegreya",Palatino,Georgia,serif;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
 }
 
 .product {
@@ -121,7 +228,7 @@ h1 {
     font-family: "Alegreya",Palatino,Georgia,serif;
     font-size: 20px;
     border: 1px solid #E6E6E6;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 30px;
     height: 200px;
 
