@@ -1,4 +1,4 @@
-name: itfen
-baseurl: \app
+username: itfen
+baseurl: /app
 pygments: true
 relative_permalinks: false
